@@ -150,7 +150,7 @@ class FetchData:
 
         :param data: message objects containing user id, message, date, service, account
         """
-        file_path = expanduser("~") + "/Documents/"
+        file_path = "database/copy-chat.db"
         # TODO: Exception handling
         ew = write_excel.ExelWriter(data, file_path)
         ew.write_data()
